@@ -3,21 +3,22 @@
 
 <head>
     <title> Мой первый сайт</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <h1> Добро пожаловать!</h1>
         <p>Это мой первый сайт. В нем я напишу о различных растениях. Почему не о себе? Просто не люблю рассказывать о себе.</p>
         <small> (В дальнейшем текст будет заменен)</small>
 
         <nav>
-            <a href="#derevo">Лиственные</a>
-            <a href="#hvoya">Хвойные</a>
-            <a href="#papor">Нецветущие</a>
-            <a href="#flower">Цветущие</a>
-            <a href="#kust">Кусты</a>
-            <a href="#otvet">Обратная сваязь</a>
+            <a href="#derevo">Лиственные</a> |
+            <a href="#hvoya">Хвойные</a> |
+            <a href="#papor">Нецветущие</a> |
+            <a href="#flower">Цветущие</a> |
+            <a href="#kust">Кусты</a> |
+            <a href="#otvet">Обратная связь</a>
 
 
         </nav>
@@ -40,7 +41,7 @@
                      <p>20-40 м. Любим многими писателями и художниками</p>
                 </li>
                 <li> <h3>Береза</h3>
-                     <img src="D:\фото\i.webp" alt="Фото березы">
+                     <img src="./фото/i.webp" alt="Фото березы">
                      <p>Береза - символ России. Невероятно красивое дерево с белой корой. </p>
                      <p>До 30 (45) м высотой. Предельный возраст - не превышает 100 - 120 лет, </p>
                      <p>отдельные деревья до 300 лет. Крона - со свисающими вниз побегами.</p>
@@ -87,7 +88,7 @@
             <h2>Нецветущие растения</h2>
             <p>Нецветущие растения -  группа растений, которые не имеют цветков, но имеют  </p>
             <p>декоративные листья. Такие растения могут быть как комнатными, так и садовыми.</p>
-            <figure>
+            <div id="fig"><figure>
                 <img src="D:\фото\scale_1200.jpeg" alt="Фото">
                 <figcaption>Сансевиерия</figcaption>
             </figure>
@@ -99,6 +100,7 @@
                 <img src="D:\фото\scale_1200 (2).jpeg" alt="Фото">
                 <figcaption>Фатсия</figcaption>
             </figure>
+        </div>
         </section>
 
         <hr>
@@ -106,18 +108,20 @@
         <section id="flower">
             <h2>Цветущие растения</h2>
             <p>Цветущие растения — это разновидность сосудистых растений, которые производят цветы для размножения.</p>
+            <div id="fig">
             <figure>
-                <img src="D:\фото\86573.520.jpg" alt="Фото">
+                <img src="/фото/86573.520.jpg" alt="Фото">
                 <figcaption>Орхидея</figcaption>
             </figure>
             <figure>
-                <img src="D:\фото\90263.520.jpg" alt="Фото">
+                <img src="/фото/90263.520.jpg" alt="Фото">
                 <figcaption>Азалия</figcaption>
             </figure>
             <figure>
-                <img src="D:\фото\87090.520.jpg" alt="Фото">
+                <img src="/фото/87090.520.jpg" alt="Фото">
                 <figcaption>Фиалка</figcaption>
             </figure>
+        </div>
 
         </section>
 
@@ -125,28 +129,34 @@
 
         <section id="kust">
              <h2>Куст</h2>
+             <article>
              <p>Кусты - многолетние растения с многочисленными тонкими и плотными стеблями, покрытыми корой, и пышной</p>
              <p> кроной, не имющие одного главногоствола, как у деревьев. Они бывают декоративными или плодово-ягодными.</p>
+             </article>
              <ul>
                 <li> <h3>Плодово-ягодные</h3>
-                   <figure>
-                        <img src="D:\фото\i (2).webp" alt="Фото">
+                   <div id="fig">
+                    <figure>
+                        <img src="/фото/i (2).webp" alt="Фото">
                         <figcaption>Куст малины</figcaption>
                    </figure>
                    <figure>
-                        <img src="D:\фото\i (3).webp" alt="фото">
+                        <img src="/фото/i (3).webp" alt="фото">
                         <figcaption>Куст черемухи</figcaption>
                      </figure>
+                     </div>
                 </li>
                 <li> <h3>Декоративные</h3>
+                     <div id="fig">
                      <figure>
-                        <img src="D:\фото\i (1).webp" alt="фото">
+                        <img src="/фото/i (1).webp" alt="фото">
                         <figcaption>Куст сирени</figcaption>
                      </figure>
                      <figure>
-                        <img src="D:\фото\i (4).webp" alt="фото">
+                        <img src="/фото/i (4).webp" alt="фото">
                         <figcaption>Куст форзиции</figcaption>
                      </figure>
+                    </div>
                 </li>
              </ul>
         </section>
@@ -155,20 +165,20 @@
 
         <section id="otvet">
             <form>
+                <h2>Обратная связь</h2>
                 <fieldset>
-                    <legend>Обратная связь</legend>
                     <div>
-                        <label for="name">Имя пользователя</label>
+                        <label for="name">Имя пользователя</label><br>
                         <input type="text" id="name" name="name">
                     </div>
                     <br>
                     <div>
-                        <label for="email">E-mail</label>
+                        <label for="email">E-mail</label><br>
                         <input type="email" id="email" name="email">
                     </div>
                     <br>
                     <div>
-                        <label for="about">Тема</label>
+                        <label for="about">Тема</label><br>
                         <select id="about" name="about">
                             <option value="" disabled selected>выберите тему</option>
                             <option value="j">жалобы</option>
@@ -178,7 +188,7 @@
                     </div>
                     <br>
                     <div>
-                        <label for="messege">Ваше сообщение</label>
+                        <label for="messege">Ваше сообщение</label><br>
                         <textarea id="messege" name="messege" rous="5" cols="35" placeholder="Введите текст" required></textarea>
                     </div>
                     <br>
@@ -194,11 +204,13 @@
     <hr>
 
 
-    <footer>
+    <footer id="footer">
+        <nav>
+            <a href="#header">В начало</a> 
+        </nav>
         <h2>Cпасибо за Внимание!</h2>
         <p>На этом пока все, но в будущем идея будет развиваться</p>
         <small>Это не точно</small>
-        <a href="header.html">В начало</a>
         <p>Контакты: <a href="example@post.com">example@post.com</a></p>
     </footer>
 
